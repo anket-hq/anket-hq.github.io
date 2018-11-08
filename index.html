@@ -6,17 +6,92 @@
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="./css/bulma.min.css">
   </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Anket</strong>!
-      </p>
-    </div>
-  </section>
+  <body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand"><span class="navbar-item">Anket</span></div>
+    </nav>
+    <section class="hero is-bold is-info">
+      <div class="hero-body">
+        <div class="container">
+              <h1 class="title">
+                AnketはSlack上でアンケートを作成し回答を集めることができるサービスです
+              </h1>
+         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Anketで出来ること</h1>
+        <div class="content">
+          <ul>
+            <li>Slack上でアンケートを作成できます</li>
+            <li>集めた回答数はSlack上でリアルタイムで確認することができます</li>
+            <li>誰が何を回答したかはWEB上で確認する事ができます</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">インストール方法</h1>
+
+        <div class="content">
+          <ol type="1">
+            <li>
+              <div>次のボタンをクリックします</div>
+              <a href="https://slack.com/oauth/authorize?client_id=460574880771.460873916066&scope=bot,commands">
+                <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
+              </a>
+            </li>
+
+            <li>
+              <div>インストールしたいワークプレイスを選択します</div>
+              <div class="has-text-centered">
+                <img src="./img/install.png" />
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">アンケートの作成</h1>
+        <h2 class="subltitle">
+          <div>
+            Anketは<a href="https://api.slack.com/slash-commands">Slash Commands</a>を用いてアンケートを作成します
+          </div>
+        </h2>
+        <div class="content">
+          <ol type="1">
+            <li>
+              <div>アンケートを開始したいチャンネルにて<code>/anket アンケートのタイトル 選択肢1 選択肢2 選択肢3 選択肢4 選択肢5</code>のように投稿します <div class="is-size-7">※選択肢は最大5つまで設定可能です</div></div>
+              <div>例:</div>
+              <div class="has-text-centered">
+                <img src="./img/sample1.png" />
+              </div>
+            </li>
+            <li>
+              <div>次のようにアンケートが作成されます</div>
+              <div class="has-text-centered">
+                <img src="./img/sample2.png" />
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="content">
+          <ol type="1">
+            <li>
+              <div>別の方法でアンケートを開始することもできます</div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
 
